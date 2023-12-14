@@ -155,17 +155,32 @@ hr {
     padding-bottom: 30px;
 }
 .card {
-height: 300px; /* Set the desired height for all cards */
-margin-bottom: 20px; /* Add margin between cards */
+    grid-column: span 3;
+    vertical-align: top;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: white;
+    padding-bottom: 10px;
+    height: 300px; 
+    overflow: hidden;
 }
-
-.card img,
-.card video {
-object-fit: cover;
-width: 100%;
-height: 100%;
+@media (max-width: 991px) {
+    .card {
+        grid-column: span 6;
+    }
+    #featured-talks .row {
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
 }
-
+.card img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .cdesc {
     height: 30px;
     vertical-align: top;
