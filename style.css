@@ -176,7 +176,7 @@ hr {
 .card img {
     border-radius: 5px;
     width: 100%;
-    object-fit: cover;
+    
 }
 .cdesc {
     height: 30px;
