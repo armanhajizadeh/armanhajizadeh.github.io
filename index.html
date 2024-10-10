@@ -43,26 +43,49 @@
                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
                   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
                   <style>
-                      .linkedin-icon {
+                      .icon {
                           font-size: 24px; /* Size of the icon */
-                          color: black; /* Icon color set to black */
+                          color: black; /* Icon color */
                           text-decoration: none; /* Remove underline */
-                          transition: color 0.3s; /* Smooth color transition */
-                          display: inline-block;
-                          margin-top: 2mm; /* Lowers the icon by 2 mm */
+                          transition: transform 0.3s, color 0.3s; /* Smooth color and transform transition */
+                          vertical-align: middle; /* Align icon vertically in the middle */
+                          margin-top: 2mm; /* Lower the icon by 2 mm */
                       }
+              
+                      .icon:hover {
+                          transform: scale(1.1); /* Slightly enlarge the icon on hover */
+                      }
+              
+                      .email-icon:hover {
+                          color: #0056b3; /* Change color on hover */
+                      }
+              
                       .linkedin-icon:hover {
-                          color: gray; /* Color on hover */
+                          color: gray; /* Change color on hover */
                       }
                   </style>
-                  <title>LinkedIn Icon Example</title>
+                  <title>Email and LinkedIn Icon Example</title>
               </head>
               <body>
-                  <a href="https://www.linkedin.com/in/arman-hajizadeh-1a679988/" class="linkedin-icon" target="_blank" title="Visit LinkedIn Profile">
+              
+                  <!-- Email Icon -->
+                  <a href="mailto:arman.hajizadeh@gmail.com" class="icon email-icon" title="Send Email">
+                      <i class="fas fa-envelope"></i> <!-- Font Awesome envelope icon -->
+                  </a>
+              
+                  <!-- LinkedIn Icon -->
+                  <a href="https://www.linkedin.com/in/arman-hajizadeh-1a679988/" class="icon linkedin-icon" target="_blank" title="Visit LinkedIn Profile">
                       <i class="fab fa-linkedin"></i> <!-- Font Awesome LinkedIn icon -->
                   </a>
+              
+                  <!-- Letterboxd Icon -->
+                  <a href="https://letterboxd.com/ArmanHajizadeh/" target="_blank" title="Seventh Art">
+                      <img src="./uploads/letterboxd.svg" alt="Letterboxd" style="width: 24px; height: 24px; transition: transform 0.3s; vertical-align: middle; margin-top: 2mm;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                  </a>
+              
               </body>
               </html>
+              
                   
             <p><a href="./uploads/resume_armanhajizadeh.pdf" target="_blank">CV, updated 8/27/2024</a></p>
           </div>
