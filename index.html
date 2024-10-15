@@ -576,7 +576,111 @@ It is important to note that Andrej Karpathy is a member of the Order of the Uni
       </ul>
     </div>
     </div>
-
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+      /* Flexbox layout for radio button alignment, customizable */
+      .radio-container {
+        display: flex;
+        flex-direction: row; /* Change to 'column' for vertical layout */
+        gap: 20px; /* Space between radio buttons */
+        margin-bottom: 20px; /* Space between radios and result text */
+      }
+    
+      /* Style for the text box that will hold the result */
+      .text-display {
+        margin-top: 20px;
+        height: auto;
+        text-align: left; /* Align text to the left */
+        font-weight: bold;
+        font-size: 18px;
+        width: 100%;
+      }
+    
+      /* Custom radio button styles - now acts like checkboxes */
+      .radio-container input[type="checkbox"] {
+        appearance: none;
+        width: 15px; /* Smaller circle */
+        height: 15px;
+        border: 2px solid black;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+      }
+    
+      .radio-container input[type="checkbox"]:checked {
+        background-color: black; /* Fill the circle with black */
+        border-color: black;
+      }
+    
+      /* Future Projects container styling */
+      .future-projects {
+        background-color: #eee;
+        padding-top: 1px;
+        margin-top: 50px;
+        padding-bottom: 30px;
+      }
+    </style>
+    </head>
+    <body>
+    
+    <!-- Existing Future Projects Section -->
+    <div class="future-projects">
+      <div class="container">
+        <div class="ctitle">Future Projects</div>
+        <ul class="nodot">
+          <li>Jan 2023 <a href="https://github.com/GazzolaLab/PyElastica"> A microswimmer on Python </a></li>
+        </ul>
+    
+        <!-- New Scripts Section Integrated -->
+        <h2>Scripts Section</h2>
+        <p>Select options and see the corresponding links below:</p>
+    
+        <!-- Radio Buttons acting like checkboxes -->
+        <div class="radio-container">
+          <input type="checkbox" id="radio-dna" value="dna" onclick="myFunction()"> DNA Data Storage
+          <input type="checkbox" id="radio-biosensors" value="biosensors" onclick="myFunction()"> Biosensors
+          <input type="checkbox" id="radio-robotics" value="robotics" onclick="myFunction()"> Soft Robotics
+        </div>
+    
+        <!-- Fixed display area for text output -->
+        <div class="text-display" id="text-display"></div>
+    
+        <script>
+        function myFunction() {
+          // Get all the radio buttons (acting as checkboxes)
+          var checkBoxDNA = document.getElementById("radio-dna");
+          var checkBoxBiosensors = document.getElementById("radio-biosensors");
+          var checkBoxRobotics = document.getElementById("radio-robotics");
+          var textDisplay = document.getElementById("text-display");
+    
+          // Initialize an empty array to collect the messages
+          var messages = [];
+    
+          // Check which checkboxes (radio buttons) are checked and push the corresponding message
+          if (checkBoxDNA.checked) {
+            messages.push('<li><a href="https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn">Stanford CS224W: DNA Data Storage</a></li>');
+          }
+          if (checkBoxBiosensors.checked) {
+            messages.push('<li><a href="https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn">Stanford CS224W: Biosensors</a></li>');
+          }
+          if (checkBoxRobotics.checked) {
+            messages.push('<li><a href="https://www.youtube.com/watch?v=JAB_plj2rbA&list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn">Stanford CS224W: Soft Robotics</a></li>');
+          }
+    
+          // Display the messages on separate lines
+          textDisplay.innerHTML = '<ul>' + messages.join('') + '</ul>'; // Wrap in a list
+        }
+        </script>
+      </div>
+    </div>
+    
+    </body>
+    </html>
+    
 
     <div class="container">
       <div class="ctitle">Teaching</div>
