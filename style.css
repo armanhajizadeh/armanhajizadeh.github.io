@@ -180,7 +180,7 @@ hr {
 }
 .cdesc {
     height: 30px;
-    vertical-align: top;
+    vertical-align: bottom;
     margin-bottom: 10px;
     font-size: 1px;
 }
