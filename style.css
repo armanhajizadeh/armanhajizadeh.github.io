@@ -108,7 +108,7 @@ hr {
 .desc {
     grid-column: span 10;
     vertical-align: top;
-    font-size: 1px;
+    font-size: 17px;
     padding-left: 20px;
     padding-bottom: 20px;
 }
@@ -182,7 +182,7 @@ hr {
     height: 30px;
     vertical-align: top;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 1px;
 }
 @media (max-width: 768px) {
     .cdesc {
