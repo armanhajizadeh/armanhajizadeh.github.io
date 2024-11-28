@@ -182,7 +182,7 @@ hr {
     height: 10px;
     vertical-align: bottom;
     margin-bottom: 10px;
-    font-size: 1px;
+    font-size: 10px;
 }
 @media (max-width: 768px) {
     .cdesc {
