@@ -179,11 +179,14 @@ hr {
     
 }
 .cdesc {
+    display: inline-block; /* Ensures it respects height and vertical alignment */
     height: 10px;
-    vertical-align: bottom;
+    vertical-align: bottom; /* Aligns with the bottom of surrounding content */
     margin-bottom: 10px;
-    font-size: 10px;
+    font-size: 10px; /* Small text size for captions */
+    line-height: 10px; /* Matches height to ensure proper text alignment */
 }
+
 @media (max-width: 768px) {
     .cdesc {
         font-size: 14px;
