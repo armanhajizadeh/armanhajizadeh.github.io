@@ -50,7 +50,7 @@ body {
     }
 }
 h1 {
-    font-size: 14px;
+    font-size: 34px;
     font-weight: normal;
     padding: 0;
     margin: 0;
@@ -145,7 +145,7 @@ hr {
     padding: 0;
 }
 .ctitle {
-    font-size: 36px;
+    font-size: 20px;
     margin-bottom: 20px;
     margin-top: 40px;
 }
