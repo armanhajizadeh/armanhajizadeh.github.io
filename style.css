@@ -58,7 +58,7 @@ h1 {
 h2 {
     font-weight: normal;
     font-style: italic;
-    color: #999;
+    color: #000;
     font-size: 18px;
     padding: 0;
     margin: 5px 0 10px 0;
@@ -156,7 +156,7 @@ hr {
 }
 .card {
     grid-column: span 3;
-    vertical-align: top;
+    vertical-align: bottom;
     background-color: #eee;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -221,7 +221,7 @@ hr {
 }
 .pub-title {
     display: inline;
-    color: #333;
+    color: #000;
 }
 .pub-venue {
     display: inline;
