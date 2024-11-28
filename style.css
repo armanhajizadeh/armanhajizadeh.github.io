@@ -156,7 +156,7 @@ hr {
 }
 .card {
     grid-column: span 3;
-    vertical-align: bottom;
+    vertical-align: top;
     background-color: #eee;
     border: 1px solid #ddd;
     border-radius: 3px;
