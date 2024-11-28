@@ -183,7 +183,7 @@ hr {
     height: 10px;
     vertical-align: bottom; /* Aligns with the bottom of surrounding content */
     margin-bottom: 10px;
-    font-size: 30px; /* Small text size for captions */
+    font-size: 20px; /* Small text size for captions */
     line-height: 10px; /* Matches height to ensure proper text alignment */
 }
 
